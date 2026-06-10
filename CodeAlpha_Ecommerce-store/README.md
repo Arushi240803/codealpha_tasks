@@ -79,7 +79,7 @@ Open frontend HTML files using Live Server extension in VS Code.
 
 Example:
 
-* Right click on index.html
+* Right click on register.html
 * Click "Open with Live Server"
 
 ---
