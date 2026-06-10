@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShopEasy | Cart</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <div class="logo">
+      ShopEasy
+    </div>
+
+    <div class="nav-links">
+
+      <a href="../pages/products.html">Products</a>
+
+      <a href="../pages/cart.html">
+        Cart (<span id="cart-count">0</span>)
+      </a>
+
+      <a href="../pages/orders.html">Orders</a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+
+    <h1>Your Shopping Cart</h1>
+
+    <p>Review your items before checkout</p>
+
+  </div>
+
+
+  <!-- ACTION LINKS -->
+  <div class="cart-actions">
+
+    <a href="../pages/products.html">
+      ← Back to Products
+    </a>
+
+    <a href="../pages/orders.html">
+      View My Orders →
+    </a>
+
+  </div>
+
+
+  <!-- CART ITEMS -->
+  <div id="cart-container"></div>
+
+
+  <!-- TOTAL -->
+  <div class="cart-summary">
+
+    <h2 id="cart-total"></h2>
+
+    <button id="checkout-btn">
+      Checkout
+    </button>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div id="toast"></div>
+
+
+  <!-- SCRIPTS -->
+  <script src="../js/api.js"></script>
+
+  <script src="../js/cart.js"></script>
+
+</body>
+
+</html>

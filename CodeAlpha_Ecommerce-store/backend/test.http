@@ -1,0 +1,76 @@
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Samsung S25",
+  "price": 65000,
+  "description": "Samsung flagship phone",
+  "image": "samsung.jpg",
+  "category": "Mobile",
+  "stock": 8
+}
+
+###
+
+GET http://localhost:5000/api/products
+
+###
+
+GET http://localhost:5000/api/products/6a117df7244ca903e76852d4
+
+###
+
+PUT http://localhost:5000/api/products/6a1168bc101bcc8a9597bcf7
+Content-Type: application/json
+
+{
+  "price": 70000,
+  "stock": 10
+}
+
+###
+
+DELETE http://localhost:5000/api/products/6a1168bc101bcc8a9597bcf7
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Arushi",
+  "email": "arushi@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "arushi@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/api/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTE3NWRkNGU0YjA5N2U3NTQzN2RmOCIsImlhdCI6MTc3OTUyOTY5MiwiZXhwIjoxNzgwMTM0NDkyfQ.85KmAMQTOg-4tdm631LLKqu7GkTj-frXSL6i9coIu6s
+Content-Type: application/json
+
+{
+  "orderItems": [
+    {
+      "name": "iPhone 15",
+      "quantity": 2,
+      "price": 79999
+    }
+  ],
+  "totalPrice": 159998
+}
+
+###
+
+GET http://localhost:5000/api/orders/myorders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTE3NWRkNGU0YjA5N2U3NTQzN2RmOCIsImlhdCI6MTc3OTUyOTY5MiwiZXhwIjoxNzgwMTM0NDkyfQ.85KmAMQTOg-4tdm631LLKqu7GkTj-frXSL6i9coIu6s

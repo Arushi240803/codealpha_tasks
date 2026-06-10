@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Register | ShopEasy</title>
+
+  <link rel="stylesheet"
+        href="../css/style.css">
+
+</head>
+
+<body>
+
+  <div class="auth-container">
+
+  <div class="auth-image">
+    <img src="../images/shopping.jpg" alt="Shopping">
+  </div>
+
+  <form id="register-form" class="auth-form">
+
+      <h1>Create Account</h1>
+
+      <p class="auth-subtitle">
+        Join ShopEasy today
+      </p>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Name"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        required
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+      >
+
+      <button type="submit">
+        Register
+      </button>
+
+      <p class="auth-switch">
+        Already have an account?
+
+        <a href="./login.html">
+          Login
+        </a>
+      </p>
+
+    </form>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="../js/api.js"></script>
+
+  <script src="../js/register.js"></script>
+
+</body>
+
+</html>
